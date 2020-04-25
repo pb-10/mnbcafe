@@ -1,35 +1,3 @@
-/*
-Template Name: Restaurant HTML Template
-Author: yaminncco
-
-Colors:
-	Body 		: #969696
-	Headers 	: #151515
-	Primary 	: #f36700
-	Grey 		: #F9F9F9 #ECECEC
-
-Fonts: Quicksand, Cabin, Dancing Script
-
-Table OF Contents
-------------------------------------
-1 > General
-2 > Navigation
-3 > Home
-4 > About
-5 > Menu
-6 > Reservation
-7 > Opening
-8 > Events
-9 > Contact
-10 > Footer
-11 > Blog Post
-12 > Responsive
-13 > Preloader
-------------------------------------*/
-
-/*------------------------------------*\
-	General
-\*------------------------------------*/
 /* --- typography --- */
 body {
 	color:#969696;
@@ -668,34 +636,6 @@ textarea.input {
 	color:#f36700;
 }
 
-/*------------------------------------*\
-	Reservation
-\*------------------------------------*/
-#reservation.section {
-	padding-bottom:20px;
-}
-
-#reservation .bg-image  {
-	height:75%;
-}
-
-.reserve-form {
-	padding: 30px 2% 30px;
-	background: rgba(21, 21, 21, 0.9);
-}
-
-.reserve-form  .form-group {
-	margin-bottom:30px;
-}
-
-.reserve-form  .form-group label {
-	color: #FFF;
-	margin-left: 10px;
-}
-
-.reserve-form .input {
-	border-color: rgba(255, 255, 255, 0.2);
-}
 
 /*------------------------------------*\
 	Opening Time
@@ -718,76 +658,6 @@ textarea.input {
 	margin-top: 12px;
 	font-weight:400;
 	color:#f36500;
-}
-
-/*------------------------------------*\
-	Events
-\*------------------------------------*/
-.event {
-	position:relative;
-	margin:15px 0px;
-}
-
-.event .event-img {
-	position:absolute;
-	left:0;
-	top:0;
-	width: 160px;
-}
-
-.event .event-img img {
-	width:100%;
-}
-
-.event .event-day {
-	position: absolute;
-	top: 0;
-	width: 60px;
-	height: 60px;
-	background: #f36700;
-	text-align: center;
-}
-
-.event .event-day span {
-	color: #FFF;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
-	left: 0;
-	right: 0;
-	font-weight: 700;
-}
-
-.event  .event-day:after , .event  .event-day:before{
-	content:"";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	position:absolute;
-	bottom:-20px;
-}
-
-.event  .event-day:before {
-	left:0;
-	border-width: 20px 60px 0 0;
-	border-color: #f36500 transparent transparent;
-}
-
-.event  .event-day:after {
-	right:0;
-	border-width: 0 60px 20px 0;
-	border-color: transparent #f36500 transparent;
-}
-
-.event .event-content {
-	min-height: 160px;
-	padding-left: 175px;
-}
-
-.event .event-content h3 {
-	margin-top:0px;
 }
 
 /*------------------------------------*\
@@ -826,218 +696,6 @@ textarea.input {
 	color:#f36500;
 }
 
-/*------------------------------------*\
-	Blog Post
-\*------------------------------------*/
-.blog-img {
-	position:relative;
-}
-
-.blog-img img {
-	width:100%;
-}
-
-.blog-day {
-	position: absolute;
-	top: 0;
-	width: 90px;
-	height: 90px;
-	background: #f36700;
-	text-align: center;
-	z-index:10;
-}
-
-.blog-day span {
-	color: #FFF;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
-	left: 0;
-	right: 0;
-	font-weight: 700;
-}
-
-.blog-day:after , .blog-day:before {
-	content:"";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	position:absolute;
-	bottom:-20px;
-}
-
-.blog-day:after {
-	left:0;
-	border-width: 20px 60px 0 0;
-	border-color: #f36500 transparent transparent;
-}
-
-.blog-day:before {
-	right:0;
-	border-width: 0 60px 20px 0;
-	border-color: transparent #f36500 transparent ;
-}
-
-.blog-meta {
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	padding-left:105px;
-	padding-top: 15px;
-	padding-bottom: 80px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(transparent));
-	background: -webkit-linear-gradient(top, #151515 0%, transparent 100%);
-	background: -o-linear-gradient(top, #151515 0%, transparent 100%);
-	background: linear-gradient(to bottom, #151515 0%, transparent 100%);
-}
-
-.blog-meta li {
-	display:inline-block;
-	color:#FFF;
-}
-
-.blog-meta li + li {
-	margin-left:15px;
-}
-
-.blog-meta li i {
-	color:#f36500;
-	margin-right:5px;
-}
-
-/* --- blog tags --- */
-.blog-tags {
-	text-align:center;
-	margin:20px 0px 30px;
-}
-
-.blog-tags a {
-	display: inline-block;
-	padding: 8px 25px;
-	margin-top:5px;
-	margin-right:2px;
-	border-radius: 40px;
-	background: #151515;
-	color: #FFF;
-	text-transform: capitalize;
-	font-size: 14px;
-}
-
-.blog-tags a:hover {
-	color:#f36500;
-}
-
-/* --- blog share --- */
-.blog-share {
-	text-align:center;
-	margin:20px 0px 30px;
-}
-
-.blog-share a {
-	display:inline-block;
-	padding:8px 25px;
-	margin-top:5px;
-	margin-right:2px;
-	background-color:#F9F9F9;
-	color:#FFF;
-	-webkit-transition:0.2s opacity;
-	transition:0.2s opacity;
-}
-
-.blog-share a i {
-	margin-right:10px;
-}
-
-.blog-share a.twitter {
-	background-color:#55acee;
-}
-
-.blog-share a.facebook {
-	background-color:#3b5998;
-}
-
-.blog-share a.google {
-	background-color:#dd4b39;
-}
-
-.blog-share a:hover {
-	opacity:0.8;
-}
-
-/* --- blog nav --- */
-.blog-nav .blog-previous , .blog-nav .blog-next {
-	position:relative;
-	min-height:120px;
-}
-
-.blog-nav .blog-previous img , .blog-nav .blog-next img {
-	position:absolute;
-	top:0;
-}
-
-.blog-nav .blog-previous img {
-	left:0;
-}
-.blog-nav .blog-next img {
-	right:0;
-}
-
-.blog-nav .blog-previous div , .blog-nav .blog-next div {
-	padding-top:5px;
-}
-
-.blog-nav .blog-previous div {
-	padding-left:135px;
-}
-
-.blog-nav .blog-next div {
-	padding-right:135px;
-	text-align:right;
-}
-
-.blog-nav .blog-previous div span , .blog-nav .blog-next div span {
-	font-family:'Dancing Script', cursive;
-}
-
-/* --- blog comments --- */
-.blog-comments {
-	margin: 30px 0px;
-}
-
-.blog-comments .media {
-	padding: 30px 15px;
-	border:1px solid #ECECEC;
-	background-color:#F9F9F9;
-}
-
-.blog-comments .media .media {
-	background-color:#FFF;
-}
-
-.blog-comments .media .media-heading h4 {
-	margin-top:0px;
-}
-
-/* --- blog reply form --- */
-.blog-reply-form .input {
-	display:block;
-	max-width:300px;
-	margin-bottom:20px;
-}
-
-.blog-reply-form textarea.input {
-	max-width:600px;
-}
-
-.copyright a {
-	color: #999;
-}
-.copyright a:hover {
-	color: #F9F9F9;
-}
 
 /*------------------------------------*\
 	Responsive
@@ -1259,4 +917,23 @@ textarea.input {
 		-webkit-transform:translateY(40px);
 		        transform:translateY(40px);
 	}
+}
+
+
+/*------------------------------------*\
+	Map
+\*------------------------------------*/
+
+.map {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
 }
